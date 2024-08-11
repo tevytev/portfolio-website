@@ -1,0 +1,70 @@
+#nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* border: solid orange; */
+  width: 100%;
+  height: 80px;
+  padding: 15px 0;
+}
+
+.nav-logo-container {
+  height: 100%;
+}
+
+#desktop-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* border: solid red; */
+  gap: 1rem;
+}
+
+#desktop-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  /* border: solid green; */
+  width: fit-content;
+  padding: 0 1.2rem;
+  font-weight: bold;
+  color: ghostwhite;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 5;
+}
+
+.nav-logo::after {
+  content: '';
+  position: absolute;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+.active-nav {
+  background: rgb(217, 217, 217);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 217, 217, 15%) 0%,
+    rgba(115, 115, 115, 15%) 100%
+  );
+  border-radius: 7px;
+}
