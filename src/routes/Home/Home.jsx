@@ -6,18 +6,42 @@ import {
   Link,
   useLocation,
 } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Home.css";
 
 export default function Home(props) {
+  const text =
+    "A passionate programmer who is dedicated to solving problems while creating scalable and dynamic web applications.".split(
+      " "
+    );
   return (
     <>
       <main className="fg home-container">
         <div className="home-text-container">
-          <h1>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              transform: "translateY(10px)",
+            }}
+            animate={{
+              opacity: 1,
+              transform: "translateX(0px)",
+            }}
+            transition={{ delay: 0.3 }}
+          >
             Hi, <br />
             I'm Tevin<span style={{ color: "#cf2447" }}>.</span>
-          </h1>
-          <div class="card">
+          </motion.h1>
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{ delay: 0.1 }}
+            class="card"
+          >
             <div class="wrap">
               <div class="terminal">
                 <hgroup class="head">
@@ -71,19 +95,54 @@ export default function Home(props) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <h3>
-            A passionate programmer who is dedicated to solving problems while
-            creating scalable and dynamic web applications.
-          </h3>
+          <motion.h3
+          initial={{
+            opacity: 0,
+            transform: "translateY(-10px)",
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateX(0px)",
+          }}
+          transition={{ delay: 0.6 }} 
+          >
+          A passionate programmer who is dedicated to solving problems while creating scalable and dynamic web applications.
+          </motion.h3>
           <div className="home-btn-container">
             {/* <a href="" id="contact-me-btn">
               Contact me
             </a> */}
             {/* <a href="" id="resume-btn">Resume</a> */}
-            <button class="contact-button">Contact me</button>
-            <button class="resume-button">Resume</button>
+            <motion.button
+              initial={{
+                opacity: 0,
+                transform: "translateX(20px)",
+              }}
+              animate={{
+                opacity: 1,
+                transform: "translateX(0px)",
+              }}
+              transition={{ delay: 1 }}
+              class="contact-button"
+            >
+              Contact me
+            </motion.button>
+            <motion.button
+              initial={{
+                opacity: 0,
+                transform: "translateX(20px)",
+              }}
+              animate={{
+                opacity: 1,
+                transform: "translateX(0px)",
+              }}
+              transition={{ delay: 1.2 }}
+              class="resume-button"
+            >
+              Resume
+            </motion.button>
           </div>
           <div></div>
         </div>

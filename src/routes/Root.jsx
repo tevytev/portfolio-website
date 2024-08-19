@@ -17,8 +17,8 @@ export default function Root(props) {
       <div id="bg">
         <NavBar />
         <Outlet className="fg" id="fg" />
-        <div className="bg" id="bg-elipse-1"></div>
-        <div className="bg" id="bg-elipse-2"></div>
+        <div className="bg floating" id="bg-elipse-1"></div>
+        <div className="bg floating" id="bg-elipse-2"></div>
         <div className="bg bg-square-accent floating" id="bg-square-accent-1"></div>
         <div className="bg bg-square-accent floating" id="bg-square-accent-2"></div>
         <div className="bg bg-square-accent floating" id="bg-square-accent-3"></div>

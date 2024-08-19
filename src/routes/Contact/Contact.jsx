@@ -11,7 +11,7 @@ import "./Contact.css";
 export default function Contact(props) {
   return (
     <>
-      
+      <main className="fg home-container"></main>
     </>
   );
 }

@@ -1,0 +1,193 @@
+.card-container {
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    background: rgb(217, 217, 217);
+    background: linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 15%) 0%,
+      rgba(115, 115, 115, 15%) 100%
+    );
+    border-radius: 7px;
+    transition: 0.3s ease-out;
+    border: solid #f3f3f36a 3px;
+    position: relative;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .card-container p {
+      color: white;
+  }
+  
+  /* .floating-button:hover .card-container {
+    border: solid #cf2447 3px;
+    box-shadow: 0 0px 20px #cf2447;
+  } */
+  
+  .card-container:hover .floating-button {
+    top: 100%;
+    opacity: 1;
+  }
+  
+  .floating-button {
+    background-color: #cf2447;
+    /* border: solid #fff 3px; */
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 34px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-out;
+    opacity: 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .floating-button:hover {
+    box-shadow: 0 0px 20px #cf2447;
+    transition: 0.3s ease;
+  
+  }
+  
+  .card-image-placeholder {
+    width: 100%;
+    height: 40%;
+    min-height: 180px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 7px;
+    /* aspect-ratio: ; */
+  }
+  
+  .tech-stack-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      /* border: solid red 1px; */
+      height:fit-content;
+      gap: 5px;
+      row-gap: 5px;
+  }
+  
+  .tech-stack-floater {
+      height: fit-content;
+      width: fit-content;
+      padding: 3px 10px;
+      border-radius: 30px;
+      color: white;
+      background-color: #cf2447;
+  }
+
+  .card-container-collapsed {
+    height: 90%;
+    width: 8%;
+    background-color: white;
+    background: rgb(217, 217, 217);
+    background: linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 15%) 0%,
+      rgba(115, 115, 115, 15%) 100%
+    );
+    border-radius: 7px;
+    transition: 0.3s ease-out;
+    border: solid #f3f3f36a 3px;
+    position: relative;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .card-container-collapsed:hover {
+    border: solid #cf2447 3px;
+    box-shadow: 0 0px 20px #cf2447;
+  }
+  
+  .card-header-collaped {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .card-container-expanded {
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    background: rgb(217, 217, 217);
+    background: linear-gradient(
+      0deg,
+      rgba(217, 217, 217, 15%) 0%,
+      rgba(115, 115, 115, 15%) 100%
+    );
+    border-radius: 7px;
+    transition: 0.3s ease-out;
+    border: solid #f3f3f36a 3px;
+    position: relative;
+    backdrop-filter: blur(6px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card-container-expanded p {
+    color: white;
+  }
+
+  .card-container-expanded:hover .floating-button {
+    top: 100%;
+    opacity: 1;
+  }
+
+  .expanded-card-top-container {
+    display: flex;
+    /* border: solid red; */
+    height: 60%;
+  }
+
+  .expanded-card-bottom-container {
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: auto;
+  }
+
+  .expanded-card-image-placeholder {
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    /* min-height: 180px; */
+    background-color: rgb(205, 205, 205);
+    border-radius: 7px;
+  }
+
+  .expanded-card-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    /* border: solid blue; */
+    width: 100%;
+    padding: 0rem 0 1rem 1rem;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .no-display {
+    display: none;
+  }

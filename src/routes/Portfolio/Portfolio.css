@@ -1,0 +1,23 @@
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  /* border: solid red; */
+}
+
+.portfolio-header-container {
+  /* border: solid red; */
+}
+
+.project-section {
+  /* border: solid green; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}

@@ -5,8 +5,10 @@
   flex-direction: row;
   /* border: solid orange; */
   width: 100%;
-  height: 80px;
+  height: 90px;
+  min-height: 85px;
   padding: 15px 0;
+  /* margin-bottom: 3rem; */
 }
 
 .nav-logo-container {
@@ -15,11 +17,21 @@
 
 #desktop-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  /* border: solid red; */
   gap: 1rem;
+  background: rgb(217, 217, 217);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 217, 217, 15%) 0%,
+    rgba(115, 115, 115, 15%) 100%
+  );
+  border-radius: 150px;
+  /* padding: .5rem; */
+  border: solid #f3f3f36a 2px;
+  position: relative;
+  padding: .4rem .4rem;
 }
 
 #desktop-nav a {
@@ -30,9 +42,11 @@
   text-decoration: none;
   /* border: solid green; */
   width: fit-content;
-  padding: 0 1.2rem;
+  padding: 0 1.5rem;
   font-weight: bold;
   color: ghostwhite;
+  mix-blend-mode: difference;
+  border-radius: 150px;
 }
 
 .nav-logo {
@@ -50,15 +64,6 @@
   z-index: 5;
 }
 
-.nav-logo::after {
-  content: '';
-  position: absolute;
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  z-index: 4;
-}
-
 .active-nav {
   background: rgb(217, 217, 217);
   background: linear-gradient(
@@ -67,4 +72,28 @@
     rgba(115, 115, 115, 15%) 100%
   );
   border-radius: 7px;
+}
+
+.nav-cursor-container {
+  position: absolute;
+  height: 100%;
+  padding: .4rem 0rem;
+  width: auto;
+  list-style-type: none;
+  /* border: solid red */
+}
+
+.nav-cursor {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  /* background-color: #cf2447; */
+  /* background: rgb(217, 217, 217);
+  background: linear-gradient(
+    0deg,
+    rgba(217, 217, 217, 15%) 0%,
+    rgba(115, 115, 115, 15%) 100%
+  ); */
+  border-radius: 150px;
+  list-style-type: none;
 }

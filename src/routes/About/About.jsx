@@ -11,7 +11,7 @@ import "./About.css";
 export default function About(props) {
   return (
     <>
-      
+      <main className="fg home-container"></main>
     </>
   );
 }
