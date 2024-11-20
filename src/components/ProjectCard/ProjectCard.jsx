@@ -1,14 +1,18 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./ProjectCard.css";
 
 export default function ProjectCard(props) {
   const {
+    id,
     projectName,
     projectNumber,
     technologies,
     description,
+    projectLink,
     info,
+    projectImg,
     handleMoreInfoClick,
     handleLessInfoClick,
   } = props;
@@ -48,8 +52,10 @@ export default function ProjectCard(props) {
   } else if (info === "gen") {
     return (
       <>
-        <div className="card-container">
-          <div className="card-image-placeholder"></div>
+        <div id={id} className="card-container">
+          <div className="card-image-placeholder">
+            <img src={projectImg} alt="" />
+          </div>
           <motion.h2
             initial={{
               opacity: 0,
@@ -58,10 +64,10 @@ export default function ProjectCard(props) {
             }}
             animate={{
               opacity: 1,
-              transform: "translateY(0px)",
+              transform: "translateX(0px)",
               display: "flex",
             }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: .7 }}
           >
             {projectName}
           </motion.h2>
@@ -73,10 +79,10 @@ export default function ProjectCard(props) {
             }}
             animate={{
               opacity: 1,
-              transform: "translateY(0px)",
+              transform: "translateX(0px)",
               display: "flex",
             }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 1 }}
           >
             Technology utilized:
           </motion.p>
@@ -88,10 +94,10 @@ export default function ProjectCard(props) {
             }}
             animate={{
               opacity: 1,
-              transform: "translateY(0px)",
+              transform: "translateX(0px)",
               display: "flex",
             }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 1 }}
             className="tech-stack-container"
           >
             {technologies.map((tech) => {
@@ -128,15 +134,18 @@ export default function ProjectCard(props) {
             transition={{ delay: 0.3 }}
             className="expanded-card-top-container"
           >
-            <div className="expanded-card-image-placeholder"></div>
+            <div className="expanded-card-image-placeholder"><img src={projectImg} alt="" /></div>
             <div className="expanded-card-header-container">
-              <h2>{projectName}</h2>
-              <p>Technology utilized:</p>
-              <div className="tech-stack-container">
-                {technologies.map((tech) => {
-                  return <div className="tech-stack-floater">{tech}</div>;
-                })}
+              <div className="expanded-card-header-container-top">
+                <h2>{projectName}</h2>
+                <p>Technology utilized:</p>
+                <div className="tech-stack-container">
+                  {technologies.map((tech) => {
+                    return <div className="tech-stack-floater">{tech}</div>;
+                  })}
+                </div>
               </div>
+              <Link target="_blank" to={projectLink} className="project-link">Visit live site</Link>
             </div>
           </motion.div>
           <motion.div
