@@ -41,7 +41,7 @@ export default function About(props) {
 
   return (
     <>
-      <main className="fg page-container">
+      <main className="fg page-container about-cont">
         <div className="page-header-container">
           <motion.h1
             initial={{
