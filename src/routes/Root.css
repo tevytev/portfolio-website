@@ -194,4 +194,8 @@ h3 {
   .bg-square-accent {
     display: none;
   }
+
+  #bg-line-accent-container {
+    display: none;
+  }
 }
