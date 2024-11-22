@@ -20,17 +20,27 @@ export default function Contact(props) {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_k9xb1va", "template_us083rp", form.current, {
+        publicKey: "VIrThvMXppE6Qt3jQ",
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          document.getElementById('sent-div').style.opacity = "1";
+          setTimeout(() => {
+            document.getElementById('sent-div').style.opacity = "0";
+          }, 3000);
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
+      document.getElementById('contact-name').value = "";
+      document.getElementById('contact-email').value = "";
+      document.getElementById('contact-message').value = "";
+
+
+      
   };
 
   return (
@@ -70,6 +80,7 @@ export default function Contact(props) {
                 Send me an Email<span style={{ color: "#1E61D2" }}>.</span>
               </h2>
               <div className="email-img-container">
+                <div id="sent-div">Email sent!</div>
                 <img id="email-img" src={emailImg} alt="" />
               </div>
             </div>
@@ -77,16 +88,18 @@ export default function Contact(props) {
               className="contact-input"
               placeholder="Name"
               type="text"
-              name="user_name"
+              name="from_name"
+              id="contact-name"
             />
             <input
               className="contact-input"
               placeholder="Email"
               type="email"
-              name="user_email"
+              name="from_email"
+              id="contact-email"
             />
-            <textarea placeholder="Message" name="message" />
-            <button className="email-submit" type="submit"></button>
+            <textarea id="contact-message" placeholder="Message" name="message" />
+            <button className="email-submit" type="submit" value="Send"></button>
           </form>
           <div className="or-container">
             <span className="or-line-2"></span>
@@ -131,19 +144,19 @@ export default function Contact(props) {
               <div className="linkedin-icon-container">
                 <i class="fa-brands fa-linkedin-in fa-xl"></i>
               </div>
-              <p>https://www.linkedin.com/in/tevincheatham/</p>
+              <a target="_blank" href="https://www.linkedin.com/in/tevin-cheatham-63594a214/">https://www.linkedin.com/in/tevin-cheatham-63594a214/</a>
             </div>
             <div className="linkedin-container">
               <div className="linkedin-icon-container">
               <i class="fa-brands fa-discord fa-xl"></i>
               </div>
-              <p>https://github.com/tevytev</p>
+              <p>tevdev13</p>
             </div>
             <div className="linkedin-container">
               <div className="linkedin-icon-container">
               <i class="fa-brands fa-github fa-xl"></i>
               </div>
-              <p>https://github.com/tevytev</p>
+              <a target="_blank" href="https://github.com/tevytev">https://github.com/tevytev</a>
             </div>
           </div>
         </motion.section>

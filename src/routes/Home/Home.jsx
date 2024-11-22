@@ -31,7 +31,7 @@ export default function Home(props) {
             transition={{ delay: 0.1, duration: 0.2 }}
             className="home-sub-header"
           >
-            Look no further!
+            Welcome!
           </motion.h2>
           <motion.h1
             initial={{
@@ -60,8 +60,7 @@ export default function Home(props) {
             transition={{ delay: 0.6, duration: 0.2 }}
             className="home-info-header"
           >
-            A passionate programmer who is dedicated to solving problems while
-            creating scalable and dynamic web applications.
+            A passionate web developer focused on building scalable, dynamic web applications that solve real-world problems
           </motion.h3>
           <div className="home-btn-container">
             {/* <a href="" id="contact-me-btn">
@@ -100,9 +99,24 @@ export default function Home(props) {
           </div>
           <div></div>
         </div>
-        <div className="home-media-container">
+        <motion.div
+          initial={{
+            opacity: 0,
+            transform: "translateY(20px)",
+            // transform: "scale(0)"
+          }}
+          animate={{
+            opacity: 1,
+            transform: "translateY(0px)",
+            // transform: "scale(1)"
+
+          }}
+          transition={{ delay: .5, duration: 0.5 }}
+          class="resume-button"
+          className="home-media-container"
+        >
           <img src={hero} alt="" />
-        </div>
+        </motion.div>
       </main>
     </>
   );

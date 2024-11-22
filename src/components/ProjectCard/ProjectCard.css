@@ -58,11 +58,18 @@
   
   .card-image-placeholder {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* height: 40%; */
     /* min-height: 180px; */
     background-color: rgb(205, 205, 205);
     border-radius: 7px;
     aspect-ratio: 16 / 9 ;
+  }
+
+  .card-image-placeholder p {
+    color: #3e3e3e;
   }
 
   .card-image-placeholder img {
@@ -163,13 +170,16 @@
     transition: none;
   }
 
+  .expanded-card-bottom-container p {
+    line-height: 1.4;
+  }
+
   .expanded-card-image-placeholder {
     display: block;
     height: 100%;
     width: auto;
     aspect-ratio: 16 / 9;
     /* min-height: 180px; */
-    background-color: rgb(205, 205, 205);
     border-radius: 7px;
     transition: none;
   }

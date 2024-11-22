@@ -8,11 +8,12 @@ import {
 } from "react-router-dom";
 import { motion, MotionConfig } from "framer-motion";
 import "./About.css";
+import pfp from "../../assets/pfp.png";
+import skillset from "../../assets/Pair programming-rafiki.png";
 
 export default function About(props) {
-
   const [active, setActive] = useState(true);
-  
+
   useEffect(() => {
     const registrationBtn = document.getElementById("register");
     const container = document.getElementById("about-container");
@@ -92,24 +93,35 @@ export default function About(props) {
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                  ex sapiente doloremque distinctio alias ratione pariatur
-                  tenetur qui rem ad atque corporis, neque quas suscipit nobis
-                  velit facilis eligendi quis.
+                  My foundational skillset includes HTML, CSS, and
+                  JavaScript/Node.js. I've also gained additional experience
+                  with frameworks and libraries like Express.js and React.js.
+                  Currently, I am focusing on honing my skills in relational
+                  database management and sql, data structures and algorithms, and Python.
                 </p>
                 <h2>Soft skills</h2>
                 <div className="skillset-icon-container">
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
+                  <div className="skillset-icon">
+                    <i class="fa-solid fa-ear-listen fa-xl"></i>
+                  </div>
+                  <div className="skillset-icon">
+                    <i class="fa-solid fa-people-group fa-xl"></i>
+                  </div>
+                  <div className="skillset-icon">
+                    <i class="fa-solid fa-brain fa-xl"></i>
+                  </div>
+                  <div className="skillset-icon">
+                    <i class="fa-solid fa-hourglass-start fa-xl"></i>
+                  </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  voluptas suscipit, nam distinctio perspiciatis ab, commodi eos
-                  odit reprehenderit quod magni sunt ducimus modi? Pariatur quo
-                  hic magni beatae doloremque.
+                  I am an active listener and a collaborative team player,
+                  always striving to think both analytically and synergetically.
+                  I prioritize effective time management and organization,
+                  understanding that these habits are essential for maintaining
+                  clear, open communication with my colleagues and stakeholders.
+                  By staying punctual and accountable, I ensure that my work
+                  aligns with team goals and expectations.
                 </p>
               </div>
             </div>
@@ -117,29 +129,33 @@ export default function About(props) {
               <div className="about-content">
                 <h2>My Background</h2>
                 <p style={{ marginBottom: "1rem" }}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quia, earum accusantium expedita vel recusandae odit omnis
-                  nulla atque odio. Expedita accusamus temporibus quasi eaque
-                  nesciunt asperiores fuga adipisci necessitatibus nihil.
+                  I have a Bachelor’s degree in Digital Media & Design from the
+                  University of Connecticut. During my time at UConn, I
+                  developed a keen understanding of the aesthetic and functional
+                  demands of the digital marketplace, which translates
+                  advantageously into my UI/UX designs.
                 </p>
                 <h2>Who is Tevin?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  a quos accusamus quaerat, quas illum hic perspiciatis animi.
-                  Officiis laboriosam unde soluta reprehenderit, obcaecati
-                  officia. Vero atque vitae temporibus nihil?
+                  Greetings! I'm from Bridgeport, Connecticut. I'm a
+                  twenty-seven year old geezer who has chronic back pain. And
+                  even though my body begs me to hang up the jersey, I love to
+                  workout and play sports with my friends. I’m a huge horror
+                  movie fan—so much so that I even watch them alone sometimes! I
+                  have a passion for drawing and enjoy diving into all things
+                  creative. Above all, my family is my greatest
+                  inspiration—they’re my beacon of strength and support.
                 </p>
               </div>
             </div>
             <div className="toggle-container">
               <div className="toggle">
                 <div className="toggle-panel toggle-left">
-                  <div
+                  <img
+                    src={skillset}
                     className="portrait-placeholder"
                     style={{ color: "black" }}
-                  >
-                    (graphic)
-                  </div>
+                  ></img>
                   <h2>
                     What I bring to the table
                     <span style={{ color: "#1E61D2" }}>.</span>
@@ -150,12 +166,11 @@ export default function About(props) {
                   </button>
                 </div>
                 <div className="toggle-panel toggle-right">
-                  <div
+                  <img
+                    src={pfp}
                     className="portrait-placeholder"
                     style={{ color: "black" }}
-                  >
-                    (portrait)
-                  </div>
+                  ></img>
                   <h2>
                     Tevin Cheatham<span style={{ color: "#1E61D2" }}>.</span>
                   </h2>
@@ -183,12 +198,11 @@ export default function About(props) {
               <div className="toggle-container">
                 <div className="toggle">
                   <div className="toggle-panel toggle-left">
-                    <div
+                    <img
+                      src={skillset}
                       className="portrait-placeholder"
                       style={{ color: "black" }}
-                    >
-                      (graphic)
-                    </div>
+                    ></img>
                     <h2>
                       What I bring to the table
                       <span style={{ color: "#1E61D2" }}>.</span>
@@ -199,12 +213,11 @@ export default function About(props) {
                     </button>
                   </div>
                   <div className="toggle-panel toggle-right">
-                    <div
+                    <img
+                      src={pfp}
                       className="portrait-placeholder"
                       style={{ color: "black" }}
-                    >
-                      (portrait)
-                    </div>
+                    ></img>
                     <h2>
                       Tevin Cheatham<span style={{ color: "#1E61D2" }}>.</span>
                     </h2>
@@ -222,105 +235,137 @@ export default function About(props) {
                 ease: "easeInOut",
               }}
             >
-            <motion.div
-              animate={active ? "about" : "skills"}
-              id="about-bottom-container"
-              className="about-bottom-container"
-            >
               <motion.div
-                style={{
-                  display: "none",
-                  transform: "translateY(0px)",
-                  // transform: 'scale(0)'
-                }}
-                variants={{
-                  about: {
-                    display: "flex",
-                    transform: ["translateY(-480px)", "translateY(-480px)", "translateY(0px)"],
-                    // transform: 'scale(1)'
-                  },
-                  skills: {
-                    transform: ["translateY(0px)", "translateY(-480px)", "translateY(-480px)"],
-                    display: 'none'
-                    // transform: 'scale(0)'
-                  },
-                }}
-                id="about"
-                className="about-content"
+                animate={active ? "about" : "skills"}
+                id="about-bottom-container"
+                className="about-bottom-container"
               >
-                <h2>My Background</h2>
-                <p style={{ marginBottom: "1rem" }}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quia, earum accusantium expedita vel recusandae odit omnis
-                  nulla atque odio. Expedita accusamus temporibus quasi eaque
-                  nesciunt asperiores fuga adipisci necessitatibus nihil.
-                </p>
-                <h2>Who is Tevin?</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  a quos accusamus quaerat, quas illum hic perspiciatis animi.
-                  Officiis laboriosam unde soluta reprehenderit, obcaecati
-                  officia. Vero atque vitae temporibus nihil?
-                </p>
-              </motion.div>
-              <motion.div
-                style={{
-                  transform: "translateY(-480px)",
-                }}
-                variants={{
-                  about: {
-                    transform: ["translateY(0px)", "translateY(-480px)", "translateY(-480px)"],
+                <motion.div
+                  style={{
                     display: "none",
-                    maxHeight: ['380px', '380px', '380px']
-                  },
-                  skills: {
-                    transform: ["translateY(-480px)", "translateY(-480px)", "translateY(0px)"],
-                    maxHeight: ['380px', '480px', '100%', '100%']
-                  },
-                }}
-                id="skills"
-                className="about-content"
-              >
-                <h2>Hard skills</h2>
-                <div className="skillset-icon-container">
-                  <div className="skillset-icon">
-                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    transform: "translateY(0px)",
+                    // transform: 'scale(0)'
+                  }}
+                  variants={{
+                    about: {
+                      display: "flex",
+                      transform: [
+                        "translateY(-480px)",
+                        "translateY(-480px)",
+                        "translateY(0px)",
+                      ],
+                      // transform: 'scale(1)'
+                    },
+                    skills: {
+                      transform: [
+                        "translateY(0px)",
+                        "translateY(-480px)",
+                        "translateY(-480px)",
+                      ],
+                      display: "none",
+                      // transform: 'scale(0)'
+                    },
+                  }}
+                  id="about"
+                  className="about-content"
+                >
+                  <h2>My Background</h2>
+                  <p style={{ marginBottom: "1rem" }}>
+                    I have a Bachelor’s degree in Digital Media & Design from
+                    the University of Connecticut. During my time at UConn, I
+                    developed a keen understanding of the aesthetic and
+                    functional demands of the digital marketplace, which
+                    translates advantageously into my UI/UX designs.
+                  </p>
+                  <h2>Who is Tevin?</h2>
+                  <p>
+                  Greetings! I'm from Bridgeport, Connecticut. I'm a
+                  twenty-seven year old geezer who has chronic back pain. And
+                  even though my body begs me to hang up the jersey, I love to
+                  workout and play sports with my friends. I’m a huge horror
+                  movie fan—so much so that I even watch them alone sometimes! I
+                  have a passion for drawing and enjoy diving into all things
+                  creative. Above all, my family is my greatest
+                  inspiration—they’re my beacon of strength and support.
+                  </p>
+                </motion.div>
+                <motion.div
+                  style={{
+                    transform: "translateY(-480px)",
+                  }}
+                  variants={{
+                    about: {
+                      transform: [
+                        "translateY(0px)",
+                        "translateY(-480px)",
+                        "translateY(-480px)",
+                      ],
+                      display: "none",
+                      maxHeight: ["380px", "380px", "380px"],
+                    },
+                    skills: {
+                      transform: [
+                        "translateY(-480px)",
+                        "translateY(-480px)",
+                        "translateY(0px)",
+                      ],
+                      maxHeight: ["380px", "480px", "100%", "100%"],
+                    },
+                  }}
+                  id="skills"
+                  className="about-content"
+                >
+                  <h2>Hard skills</h2>
+                  <div className="skillset-icon-container">
+                    <div className="skillset-icon">
+                      <i class="fa-brands fa-html5 fa-2xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-brands fa-css3 fa-2xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-brands fa-js fa-2xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-brands fa-python fa-2xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-brands fa-react fa-2xl"></i>
+                    </div>
                   </div>
-                  <div className="skillset-icon">
-                    <i class="fa-brands fa-css3 fa-2xl"></i>
+                  <p>
+                  My foundational skillset includes HTML, CSS, and
+                  JavaScript/Node.js. I've also gained additional experience
+                  with frameworks and libraries like Express.js and React.js.
+                  Currently, I am focusing on honing my skills in relational
+                  database management, data structures and algorithms, and Python.
+                  </p>
+                  <h2>Soft skills</h2>
+                  <div className="skillset-icon-container">
+                    <div className="skillset-icon">
+                      <i class="fa-solid fa-ear-listen fa-xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-solid fa-people-group fa-xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-solid fa-brain fa-xl"></i>
+                    </div>
+                    <div className="skillset-icon">
+                      <i class="fa-solid fa-hourglass-start fa-xl"></i>
+                    </div>
                   </div>
-                  <div className="skillset-icon">
-                    <i class="fa-brands fa-js fa-2xl"></i>
-                  </div>
-                  <div className="skillset-icon">
-                    <i class="fa-brands fa-python fa-2xl"></i>
-                  </div>
-                  <div className="skillset-icon">
-                    <i class="fa-brands fa-react fa-2xl"></i>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-                  ex sapiente doloremque distinctio alias ratione pariatur
-                  tenetur qui rem ad atque corporis, neque quas suscipit nobis
-                  velit facilis eligendi quis.
-                </p>
-                <h2>Soft skills</h2>
-                <div className="skillset-icon-container">
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                  <div className="skillset-icon"></div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  voluptas suscipit, nam distinctio perspiciatis ab, commodi eos
-                  odit reprehenderit quod magni sunt ducimus modi? Pariatur quo
-                  hic magni beatae doloremque.
-                </p>
+                  <p>
+                    I am an active listener and a collaborative team player,
+                    always striving to think both analytically and
+                    synergetically. I prioritize effective time management and
+                    organization, understanding that these habits are essential
+                    for maintaining clear, open communication with my colleagues
+                    and stakeholders. By staying punctual and accountable, I
+                    ensure that my work aligns with team goals and expectations.
+                  </p>
+                </motion.div>
               </motion.div>
-            </motion.div>
             </MotionConfig>
           </motion.div>
         </section>

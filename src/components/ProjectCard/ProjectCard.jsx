@@ -54,7 +54,7 @@ export default function ProjectCard(props) {
       <>
         <div id={id} className="card-container">
           <div className="card-image-placeholder">
-            <img src={projectImg} alt="" />
+          {projectImg ? <img src={projectImg} alt="" /> : <p>In development</p>}
           </div>
           <motion.h2
             initial={{
@@ -134,7 +134,7 @@ export default function ProjectCard(props) {
             transition={{ delay: 0.3 }}
             className="expanded-card-top-container"
           >
-            <div className="expanded-card-image-placeholder"><img src={projectImg} alt="" /></div>
+            <div className="expanded-card-image-placeholder">{projectImg ? <img src={projectImg} alt="" /> : <p>In development</p>}</div>
             <div className="expanded-card-header-container">
               <div className="expanded-card-header-container-top">
                 <h2>{projectName}</h2>
@@ -145,7 +145,7 @@ export default function ProjectCard(props) {
                   })}
                 </div>
               </div>
-              <Link target="_blank" to={projectLink} className="project-link">Visit live site</Link>
+              {projectLink ? <Link target="_blank" to={projectLink} className="project-link">Visit live site</Link> : <div target="_blank" className="project-link">Live site unavailable</div>}
             </div>
           </motion.div>
           <motion.div
@@ -164,14 +164,7 @@ export default function ProjectCard(props) {
           >
             <h3 style={{ fontWeight: "bold" }}>Description</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reiciendis soluta quae perspiciatis rem laborum voluptatibus quos
-              fuga perferendis exercitationem, itaque a nesciunt repellat
-              quibusdam pariatur modi et voluptate rerum voluptas. Lorem, ipsum
-              dolor sit amet consectetur adipisicing elit. Mollitia corrupti
-              molestias laboriosam, illum expedita architecto molestiae eaque
-              alias blanditiis quam et, fugiat, accusantium in dolorem nesciunt
-              sit. Corrupti, facere modi.
+              {description}
             </p>
           </motion.div>
           <button

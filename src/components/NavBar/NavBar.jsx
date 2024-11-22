@@ -6,10 +6,11 @@ import {
   MotionConfig,
   AnimatePresence,
   delay,
+  color,
 } from "framer-motion";
 import { Sling as Hamburger } from "hamburger-react";
 import "./NavBar.css";
-import logo from "../../assets/tevdev-logo-close.png";
+import logo from "../../assets/logo-2.png";
 
 export default function NavBar() {
   const [position, setPosition] = useState({
@@ -73,6 +74,7 @@ const Tab = ({ children, link, setPosition, contact, tab }) => {
             width,
             opacity: 1,
             left: ref.current.offsetLeft,
+            mixBlendMode: 'multiply'
           });
         }}
         style={({ isActive, isPending, isTransitioning, hover }) => {

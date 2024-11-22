@@ -24,12 +24,7 @@
   align-items: center;
   height: 100%;
   gap: 1rem;
-  background: rgb(217, 217, 217);
-  background: linear-gradient(
-    0deg,
-    rgba(217, 217, 217, 45%) 0%,
-    rgba(115, 115, 115, 45%) 100%
-  );
+  background: rgba(115, 115, 115, 45%);
   border-radius: 150px;
   /* padding: .5rem; */
   /* border: solid #f3f3f36a 1px; */
@@ -68,8 +63,7 @@
 }
 
 #contact {
-  background-color: #1369ff;
-  mix-blend-mode:multiply;
+  background-color: var(--primary);
   transition: .4s ease;
   color: white;
 }

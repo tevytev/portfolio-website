@@ -192,4 +192,8 @@ h3 {
   h1 {
     font-size: 3rem;
   }
+
+  .bg-square-accent {
+    display: none;
+  }
 }
