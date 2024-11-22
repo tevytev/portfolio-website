@@ -90,6 +90,7 @@ export default function Contact(props) {
               type="text"
               name="from_name"
               id="contact-name"
+              required
             />
             <input
               className="contact-input"
@@ -97,8 +98,9 @@ export default function Contact(props) {
               type="email"
               name="from_email"
               id="contact-email"
+              required
             />
-            <textarea id="contact-message" placeholder="Message" name="message" />
+            <textarea id="contact-message" placeholder="Message" name="message" required />
             <button className="email-submit" type="submit" value="Send"></button>
           </form>
           <div className="or-container">

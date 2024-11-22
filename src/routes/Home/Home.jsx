@@ -9,6 +9,7 @@ import {
 import { motion } from "framer-motion";
 import "./Home.css";
 import hero from "../../assets/Application programming interface-rafiki.png";
+import resume from "../../resources/Tevin_Cheatham_Resume.pdf"
 
 export default function Home(props) {
   const text =
@@ -83,6 +84,8 @@ export default function Home(props) {
               Contact me
             </motion.a>
             <motion.a
+              href={resume}
+              target="_blank"
               initial={{
                 opacity: 0,
                 transform: "translateX(20px)",

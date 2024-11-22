@@ -425,72 +425,77 @@ const AnimatedHamburgerButton = () => {
               </motion.a>
             </nav>
             <motion.div className="mobile-nav-bottom">
-              <motion.i
-                initial={{
-                  display: "none",
-                  opacity: 0,
-                  y: "-5px",
-                }}
-                animate={{
-                  display: "inline-block",
-                  opacity: 1,
-                  y: "0px",
-                }}
-                exit={{
-                  transition: {
-                    delay: 0.5,
-                    duration: 0.5,
-                  },
-                  opacity: 0,
-                }}
-                transition={{
-                  display: {
-                    delay: 0,
-                  },
-                  opacity: {
-                    delay: 0.4,
-                    duration: 1,
-                  },
-                  y: {
-                    delay: 0.5,
-                    duration: 1,
-                  },
-                }}
-                class="fa-brands fa-linkedin fa-2xl"
-              ></motion.i>
-              <motion.i
-                initial={{
-                  display: "none",
-                  opacity: 0,
-                  y: "-5px",
-                }}
-                animate={{
-                  display: "inline-block",
-                  opacity: 1,
-                  y: "0px",
-                }}
-                exit={{
-                  transition: {
-                    delay: 0.5,
-                    duration: 0.5,
-                  },
-                  opacity: 0,
-                }}
-                transition={{
-                  display: {
-                    delay: 0,
-                  },
-                  opacity: {
-                    delay: 0.6,
-                    duration: 1,
-                  },
-                  y: {
-                    delay: 0.7,
-                    duration: 1,
-                  },
-                }}
-                class="fa-brands fa-github fa-2xl"
-              ></motion.i>
+              <a target="_blank" href="https://www.linkedin.com/in/tevin-cheatham-63594a214/">
+                <motion.i
+                  initial={{
+                    display: "none",
+                    opacity: 0,
+                    y: "-5px",
+                  }}
+                  animate={{
+                    display: "inline-block",
+                    opacity: 1,
+                    y: "0px",
+                  }}
+                  exit={{
+                    transition: {
+                      delay: 0.5,
+                      duration: 0.5,
+                    },
+                    opacity: 0,
+                  }}
+                  transition={{
+                    display: {
+                      delay: 0,
+                    },
+                    opacity: {
+                      delay: 0.4,
+                      duration: 1,
+                    },
+                    y: {
+                      delay: 0.5,
+                      duration: 1,
+                    },
+                  }}
+                  class="fa-brands fa-linkedin fa-2xl"
+                ></motion.i>
+              </a>
+              
+              <a target="" href="https://github.com/tevytev">
+                <motion.i
+                  initial={{
+                    display: "none",
+                    opacity: 0,
+                    y: "-5px",
+                  }}
+                  animate={{
+                    display: "inline-block",
+                    opacity: 1,
+                    y: "0px",
+                  }}
+                  exit={{
+                    transition: {
+                      delay: 0.5,
+                      duration: 0.5,
+                    },
+                    opacity: 0,
+                  }}
+                  transition={{
+                    display: {
+                      delay: 0,
+                    },
+                    opacity: {
+                      delay: 0.6,
+                      duration: 1,
+                    },
+                    y: {
+                      delay: 0.7,
+                      duration: 1,
+                    },
+                  }}
+                  class="fa-brands fa-github fa-2xl"
+                ></motion.i>
+              </a>
               <a href="tel:+12035511566">
                 <motion.i
                   initial={{
