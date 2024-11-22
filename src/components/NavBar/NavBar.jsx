@@ -305,7 +305,7 @@ const AnimatedHamburgerButton = () => {
                 }}
                 key="home"
                 className="mobile-nav-link"
-                href="http://localhost:5173/home"
+                href="/home"
               >
                 {location.pathname === '/home' ? <p>Home.</p> : <p><span className="text-stroke">Home</span>.</p>}
               </motion.a>
@@ -343,7 +343,7 @@ const AnimatedHamburgerButton = () => {
                 }}
                 key="portfolio"
                 className="mobile-nav-link"
-                href="http://localhost:5173/portfolio"
+                href="/portfolio"
               >
                 {location.pathname === '/portfolio' ? <p>Portfolio.</p> : <p><span className="text-stroke">Portfolio</span>.</p>}
               </motion.a>
@@ -381,7 +381,7 @@ const AnimatedHamburgerButton = () => {
                 }}
                 key="about"
                 className="mobile-nav-link"
-                href="http://localhost:5173/about"
+                href="/about"
               >
                 {location.pathname === '/about' ? <p>About me.</p> : <p><span className="text-stroke">About me</span>.</p>}
               </motion.a>
@@ -419,7 +419,7 @@ const AnimatedHamburgerButton = () => {
                 }}
                 key="contact"
                 className="mobile-nav-link"
-                href="http://localhost:5173/contact"
+                href="/contact"
               >
                 {location.pathname === '/contact' ? <p>Hire me.</p> : <p><span className="text-stroke">Hire me</span>.</p>}
               </motion.a>
