@@ -242,28 +242,16 @@ export default function About(props) {
               >
                 <motion.div
                   style={{
-                    display: "none",
+                    // display: "none",
                     transform: "translateY(0px)",
                     // transform: 'scale(0)'
                   }}
                   variants={{
                     about: {
-                      display: "flex",
-                      transform: [
-                        "translateY(-480px)",
-                        "translateY(-480px)",
-                        "translateY(0px)",
-                      ],
-                      // transform: 'scale(1)'
+                      opacity: ["0", "0", "0", "1"]
                     },
                     skills: {
-                      transform: [
-                        "translateY(0px)",
-                        "translateY(-480px)",
-                        "translateY(-480px)",
-                      ],
-                      display: "none",
-                      // transform: 'scale(0)'
+                      opacity: ["1", "0", "0", "0"]
                     },
                   }}
                   id="about"
@@ -291,25 +279,14 @@ export default function About(props) {
                 </motion.div>
                 <motion.div
                   style={{
-                    transform: "translateY(-480px)",
+                    // transform: "translateY(-480px)",
                   }}
                   variants={{
                     about: {
-                      transform: [
-                        "translateY(0px)",
-                        "translateY(-480px)",
-                        "translateY(-480px)",
-                      ],
-                      display: "none",
-                      maxHeight: ["380px", "380px", "380px"],
+                      opacity: ["1", "0", "0", "0"]
                     },
                     skills: {
-                      transform: [
-                        "translateY(-480px)",
-                        "translateY(-480px)",
-                        "translateY(0px)",
-                      ],
-                      maxHeight: ["380px", "480px", "100%", "100%"],
+                      opacity: ["0", "0", "0", "1"]
                     },
                   }}
                   id="skills"
