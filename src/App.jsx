@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Root from "./routes/Root";
 import Home from "./routes/Home/Home";
@@ -8,6 +8,15 @@ import Portfolio from "./routes/Portfolio/Portfolio";
 import "./App.css";
 
 function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { pathname } = location;
+
+  useEffect(() => {
+    if (pathname === '/') navigate('/home')
+
+    return () => {};
+  }, [pathname]);
 
   return (
     <>

@@ -39,9 +39,8 @@ export default function ProjectCard(props) {
               display: "flex",
             }}
             transition={{ delay: 0.5 }}
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
+            onClick={handleMoreInfoClick}
+            id={`head${projectNumber}`}
             className="card-header-collaped"
           >
             {projectName}

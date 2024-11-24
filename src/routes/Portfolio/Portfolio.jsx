@@ -31,11 +31,11 @@ export default function Portfolio(props) {
   }, []);
 
   const handleMoreInfoClick = (e) => {
-    if (e.target.id === "card1") {
+    if (e.target.id === "card1" || e.target.id === 'head1') {
       setProjectOneInfo("more");
       setProjectTwoInfo("coll");
       setProjectThreeInfo("coll");
-    } else if (e.target.id === "card2") {
+    } else if (e.target.id === "card2" || e.target.id === 'head2') {
       setProjectTwoInfo("more");
       setProjectOneInfo("coll");
       setProjectThreeInfo("coll");
