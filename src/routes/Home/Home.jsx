@@ -9,7 +9,7 @@ import {
 import { motion } from "framer-motion";
 import "./Home.css";
 import hero from "../../assets/Application programming interface-rafiki.png";
-import resume from "../../resources/Tevin_Cheatham_Resume.pdf"
+import resume from "../../resources/Tevin_Cheatham_Resume.pdf";
 
 export default function Home(props) {
   const text =
@@ -61,13 +61,10 @@ export default function Home(props) {
             transition={{ delay: 0.6, duration: 0.2 }}
             className="home-info-header"
           >
-            A passionate web developer focused on building scalable, dynamic web applications that solve real-world problems
+            A passionate web developer focused on building scalable, dynamic web
+            applications that solve real-world problems
           </motion.h3>
           <div className="home-btn-container">
-            {/* <a href="" id="contact-me-btn">
-              Contact me
-            </a> */}
-            {/* <a href="" id="resume-btn">Resume</a> */}
             <motion.a
               initial={{
                 opacity: 0,
@@ -79,7 +76,7 @@ export default function Home(props) {
               }}
               transition={{ delay: 1, duration: 0.1 }}
               class="contact-button"
-              href="http://localhost:5173/contact"
+              href="/contact"
             >
               Contact me
             </motion.a>
@@ -106,15 +103,12 @@ export default function Home(props) {
           initial={{
             opacity: 0,
             transform: "translateY(20px)",
-            // transform: "scale(0)"
           }}
           animate={{
             opacity: 1,
             transform: "translateY(0px)",
-            // transform: "scale(1)"
-
           }}
-          transition={{ delay: .5, duration: 0.5 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
           class="resume-button"
           className="home-media-container"
         >

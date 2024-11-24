@@ -13,7 +13,6 @@ import ecomImg from "../../assets/ecom-screenshot.png";
 import portImg from "../../assets/portfolio-screenshot.png";
 import chatImg from "../../assets/chat-screenshot.png";
 
-
 export default function Portfolio(props) {
   const [projectOneInfo, setProjectOneInfo] = useState("gen");
   const [projectTwoInfo, setProjectTwoInfo] = useState("gen");
@@ -126,7 +125,7 @@ export default function Portfolio(props) {
               "React.js",
               "Vite",
               "Framer Motion",
-              "Figma"
+              "Figma",
             ]}
             projectLink="http://localhost:5173/home"
             info={projectTwoInfo}
@@ -147,12 +146,12 @@ export default function Portfolio(props) {
               "JavaScript",
               "React.js",
               "Express.js",
-              'OAuth 2.0',
+              "OAuth 2.0",
               "Socket.io",
               "MongoDB",
               "Vite",
               "Figma",
-              "More to come"
+              "More to come",
             ]}
             info={projectThreeInfo}
             handleMoreInfoClick={handleMoreInfoClick}

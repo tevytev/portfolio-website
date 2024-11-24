@@ -54,7 +54,11 @@ export default function ProjectCard(props) {
       <>
         <div id={id} className="card-container">
           <div className="card-image-placeholder">
-          {projectImg ? <img src={projectImg} alt="" /> : <p>In development</p>}
+            {projectImg ? (
+              <img src={projectImg} alt="" />
+            ) : (
+              <p>In development</p>
+            )}
           </div>
           <motion.h2
             initial={{
@@ -67,7 +71,7 @@ export default function ProjectCard(props) {
               transform: "translateX(0px)",
               display: "flex",
             }}
-            transition={{ delay: .7 }}
+            transition={{ delay: 0.7 }}
           >
             {projectName}
           </motion.h2>
@@ -134,7 +138,13 @@ export default function ProjectCard(props) {
             transition={{ delay: 0.3 }}
             className="expanded-card-top-container"
           >
-            <div className="expanded-card-image-placeholder">{projectImg ? <img src={projectImg} alt="" /> : <p>In development</p>}</div>
+            <div className="expanded-card-image-placeholder">
+              {projectImg ? (
+                <img src={projectImg} alt="" />
+              ) : (
+                <p>In development</p>
+              )}
+            </div>
             <div className="expanded-card-header-container">
               <div className="expanded-card-header-container-top">
                 <h2>{projectName}</h2>
@@ -145,7 +155,15 @@ export default function ProjectCard(props) {
                   })}
                 </div>
               </div>
-              {projectLink ? <Link target="_blank" to={projectLink} className="project-link">Visit live site</Link> : <div target="_blank" className="project-link">Live site unavailable</div>}
+              {projectLink ? (
+                <Link target="_blank" to={projectLink} className="project-link">
+                  Visit live site
+                </Link>
+              ) : (
+                <div target="_blank" className="project-link">
+                  Live site unavailable
+                </div>
+              )}
             </div>
           </motion.div>
           <motion.div
@@ -163,9 +181,7 @@ export default function ProjectCard(props) {
             className="expanded-card-bottom-container"
           >
             <h3 style={{ fontWeight: "bold" }}>Description</h3>
-            <p>
-              {description}
-            </p>
+            <p>{description}</p>
           </motion.div>
           <button
             id={`card${projectNumber}`}

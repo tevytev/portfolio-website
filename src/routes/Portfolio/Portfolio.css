@@ -8,23 +8,15 @@
   padding-top: 1rem;
   max-width: 1088px;
   padding-bottom: 1rem;
-  /* z-index: 1; */
-  /* border: solid red; */
-}
-
-.page-header-container {
-  /* border: solid red; */
 }
 
 .project-section {
-  /* border: solid green; */
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
   max-height: 740px;
-
 }
 
 @media only screen and (max-width: 1089px) {
@@ -36,8 +28,6 @@
 @media only screen and (max-width: 768px) {
   .project-section {
     flex-direction: column;
-    max-height:none ;
-    /* padding-bottom: 3rem; */
+    max-height: none;
   }
-
 }

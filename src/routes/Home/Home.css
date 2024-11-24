@@ -6,9 +6,6 @@
     height: auto;
     max-width: 1088px;
     margin-top: 2rem;
-    /* max-height: 550px; */
-
-    /* border: solid red; */
 }
 
 .home-text-container {
@@ -16,9 +13,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    /* border: solid green; */
     width: 50%;
-    /* min-width: 468px; */
 
 }
 
@@ -26,20 +21,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #000; */
-    /* border: 5px solid var(--primary); */
     border-radius: 20px;
     width: 50%;
 }
 
 .home-media-container img {
-  /* border: solid red; */
   width: 100%;
   height: auto;
 }
 
 .home-btn-container {
-    /* border: solid orange; */
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -54,7 +45,6 @@
     height: 3.5rem;
     width: 35%;
     border-radius: 60px;
-    /* background-color: aqua; */
     text-decoration: none;
 }
 
@@ -64,7 +54,6 @@
 }
 
 .text-stroke {
-  /* font: 800 1em "Outfit", sans-serif; */
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
 }
@@ -115,7 +104,6 @@
     scale: 1;
     color: black;
     box-shadow: 0 0px 20px #fff;
-    /* border: 1.5px solid #fff; */
   }
   
   .resume-button:active {
@@ -153,14 +141,8 @@
     transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .contact-button:hover::before {
-    /* scale: 4; */
-  }
-  
   .contact-button:hover {
-    /* scale: 1; */
     box-shadow: 0 0px 20px var(--primary);
-    /* border: 1.5px solid #1E61D2; */
   }
   
   .contact-button:active {

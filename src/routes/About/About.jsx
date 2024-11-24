@@ -13,6 +13,11 @@ import skillset from "../../assets/Pair programming-rafiki.png";
 
 export default function About(props) {
   const [active, setActive] = useState(true);
+  window.setTimeout(function () {
+    text.style.display = "flex";
+    document.body.offsetHeight; // Yes, this line!
+    text.style.opacity = "1";
+  }, 2000);
 
   useEffect(() => {
     const registrationBtn = document.getElementById("register");
@@ -97,7 +102,8 @@ export default function About(props) {
                   JavaScript/Node.js. I've also gained additional experience
                   with frameworks and libraries like Express.js and React.js.
                   Currently, I am focusing on honing my skills in relational
-                  database management and sql, data structures and algorithms, and Python.
+                  database management and sql, data structures and algorithms,
+                  and Python.
                 </p>
                 <h2>Soft skills</h2>
                 <div className="skillset-icon-container">
@@ -241,17 +247,15 @@ export default function About(props) {
                 className="about-bottom-container"
               >
                 <motion.div
-                  style={{
-                    // display: "none",
-                    transform: "translateY(0px)",
-                    // transform: 'scale(0)'
-                  }}
+                  style={{}}
                   variants={{
                     about: {
-                      opacity: ["0", "0", "0", "1"]
+                      opacity: ["0", "0", "0", "1"],
+                      zIndex: 2,
                     },
                     skills: {
-                      opacity: ["1", "0", "0", "0"]
+                      opacity: ["1", "0", "0", "0"],
+                      zIndex: 0,
                     },
                   }}
                   id="about"
@@ -267,26 +271,26 @@ export default function About(props) {
                   </p>
                   <h2>Who is Tevin?</h2>
                   <p>
-                  Greetings! I'm from Bridgeport, Connecticut. I'm a
-                  twenty-seven year old geezer who has chronic back pain. And
-                  even though my body begs me to hang up the jersey, I love to
-                  workout and play sports with my friends. I’m a huge horror
-                  movie fan—so much so that I even watch them alone sometimes! I
-                  have a passion for drawing and enjoy diving into all things
-                  creative. Above all, my family is my greatest
-                  inspiration—they’re my beacon of strength and support.
+                    Greetings! I'm from Bridgeport, Connecticut. I'm a
+                    twenty-seven year old geezer who has chronic back pain. And
+                    even though my body begs me to hang up the jersey, I love to
+                    workout and play sports with my friends. I’m a huge horror
+                    movie fan—so much so that I even watch them alone sometimes!
+                    I have a passion for drawing and enjoy diving into all
+                    things creative. Above all, my family is my greatest
+                    inspiration—they’re my beacon of strength and support.
                   </p>
                 </motion.div>
                 <motion.div
-                  style={{
-                    // transform: "translateY(-480px)",
-                  }}
+                  style={{}}
                   variants={{
                     about: {
-                      opacity: ["1", "0", "0", "0"]
+                      opacity: ["1", "0", "0", "0"],
+                      zIndex: 0,
                     },
                     skills: {
-                      opacity: ["0", "0", "0", "1"]
+                      opacity: ["0", "0", "0", "1"],
+                      zIndex: 2,
                     },
                   }}
                   id="skills"
@@ -311,11 +315,12 @@ export default function About(props) {
                     </div>
                   </div>
                   <p>
-                  My foundational skillset includes HTML, CSS, and
-                  JavaScript/Node.js. I've also gained additional experience
-                  with frameworks and libraries like Express.js and React.js.
-                  Currently, I am focusing on honing my skills in relational
-                  database management, data structures and algorithms, and Python.
+                    My foundational skillset includes HTML, CSS, and
+                    JavaScript/Node.js. I've also gained additional experience
+                    with frameworks and libraries like Express.js and React.js.
+                    Currently, I am focusing on honing my skills in relational
+                    database management, data structures and algorithms, and
+                    Python.
                   </p>
                   <h2>Soft skills</h2>
                   <div className="skillset-icon-container">
