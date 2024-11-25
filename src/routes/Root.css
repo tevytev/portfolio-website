@@ -181,6 +181,10 @@ h3 {
     padding-bottom: 3rem;
   }
 
+  .floating {
+    animation: none;
+  }
+
   h1 {
     font-size: 3rem;
   }

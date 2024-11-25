@@ -66,6 +66,9 @@ export default function Home(props) {
           </motion.h3>
           <div className="home-btn-container">
             <motion.a
+              style={{ 
+                willChange: 'transform, opacity' 
+              }}
               initial={{
                 opacity: 0,
                 x: "20px",
@@ -81,6 +84,9 @@ export default function Home(props) {
               Contact me
             </motion.a>
             <motion.a
+              style={{ 
+                willChange: 'transform, opacity' 
+              }}
               href={resume}
               target="_blank"
               initial={{
