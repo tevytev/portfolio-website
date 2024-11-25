@@ -21,6 +21,9 @@ export default function Home(props) {
       <main className="fg home-container">
         <div className="home-text-container">
           <motion.h2
+            style={{ 
+              willChange: 'transform, opacity' 
+            }}
             initial={{
               opacity: 0,
               transform: "translateX(10px)",
@@ -35,6 +38,9 @@ export default function Home(props) {
             Welcome!
           </motion.h2>
           <motion.h1
+            style={{ 
+              willChange: 'transform, opacity' 
+            }}
             initial={{
               opacity: 0,
               transform: "translateY(10px)",
@@ -50,6 +56,9 @@ export default function Home(props) {
             developer<span style={{ color: "#1E61D2" }}>.</span>
           </motion.h1>
           <motion.h3
+            style={{ 
+              willChange: 'transform, opacity' 
+            }}
             initial={{
               opacity: 0,
               transform: "translateY(-10px)",
@@ -102,6 +111,9 @@ export default function Home(props) {
           <div></div>
         </div>
         <motion.div
+          style={{ 
+            willChange: 'transform, opacity' 
+          }}
           initial={{
             opacity: 0,
             transform: "translateY(20px)",
