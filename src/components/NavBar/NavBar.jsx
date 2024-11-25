@@ -210,7 +210,7 @@ const AnimatedHamburgerButton = () => {
             }}
             animate={{
               height: "calc(100vh - 2.5rem)",
-              width: "calc(100vw - 2.5rem)",
+              width: "calc(100vw - 2rem)",
               opacity: 1,
             }}
             exit={{

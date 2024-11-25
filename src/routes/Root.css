@@ -176,10 +176,9 @@ h3 {
 
 @media only screen and (max-width: 768px) {
   #bg {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 3rem;
-    min-height: fit-content;
   }
 
   h1 {
@@ -191,6 +190,22 @@ h3 {
   }
 
   #bg-line-accent-container {
-    display: none;
+    position: fixed;
   }
+
+  #bg-line-accent-1 {
+    height: 250px;
+    width: 60px;
+  }
+
+  #bg-line-accent-2 {
+    height: 550px;
+    width: 60px;
+  }
+
+  #bg-line-accent-3 {
+    height: 400px;
+    width: 60px;
+  }
+
 }
