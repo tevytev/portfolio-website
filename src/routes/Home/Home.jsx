@@ -77,7 +77,7 @@ export default function Home(props) {
                 opacity: 1,
                 x: "0px",
               }}
-              transition={{ delay: 1, duration: 0.1 }}
+              transition={{ delay: 1, duration: 0.5 }}
               class="contact-button"
               href="/contact"
             >
@@ -97,7 +97,7 @@ export default function Home(props) {
                 opacity: 1,
                 x: "0px",
               }}
-              transition={{ delay: 1.2, duration: 0.1 }}
+              transition={{ delay: 1.5, duration: 0.5 }}
               class="resume-button"
             >
               Resume
