@@ -191,6 +191,7 @@ h3 {
 
   #bg-line-accent-container {
     position: fixed;
+    animation: none;
   }
 
   #bg-line-accent-1 {

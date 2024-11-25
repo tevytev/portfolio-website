@@ -68,11 +68,11 @@ export default function Home(props) {
             <motion.a
               initial={{
                 opacity: 0,
-                transform: "translateX(20px)",
+                x: "20px",
               }}
               animate={{
                 opacity: 1,
-                transform: "translateX(0px)",
+                x: "0px",
               }}
               transition={{ delay: 1, duration: 0.1 }}
               class="contact-button"
@@ -85,11 +85,11 @@ export default function Home(props) {
               target="_blank"
               initial={{
                 opacity: 0,
-                transform: "translateX(20px)",
+                x: "20px",
               }}
               animate={{
                 opacity: 1,
-                transform: "translateX(0px)",
+                x: "0px",
               }}
               transition={{ delay: 1.2, duration: 0.1 }}
               class="resume-button"
