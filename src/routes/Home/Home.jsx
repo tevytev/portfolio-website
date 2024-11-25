@@ -71,11 +71,9 @@ export default function Home(props) {
               }}
               initial={{
                 opacity: 0,
-                x: "20px",
               }}
               animate={{
                 opacity: 1,
-                x: "0px",
               }}
               transition={{ delay: 1, duration: 0.5 }}
               class="contact-button"
@@ -91,11 +89,9 @@ export default function Home(props) {
               target="_blank"
               initial={{
                 opacity: 0,
-                x: "20px",
               }}
               animate={{
                 opacity: 1,
-                x: "0px",
               }}
               transition={{ delay: 1.5, duration: 0.5 }}
               class="resume-button"
