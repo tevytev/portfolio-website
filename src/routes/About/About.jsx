@@ -123,11 +123,12 @@ export default function About(props) {
                 <p>
                   I am an active listener and a collaborative team player,
                   always striving to think both analytically and synergetically.
-                  I prioritize effective time management and organization,
-                  understanding that these habits are essential for maintaining
-                  clear, open communication with my colleagues and stakeholders.
-                  By staying punctual and accountable, I ensure that my work
-                  aligns with team goals and expectations.
+                  I have a strong will and capcity to learn. I prioritize
+                  effective time management and organization, understanding that
+                  these habits are essential for maintaining clear, open
+                  communication with my colleagues and stakeholders. By staying
+                  punctual and accountable, I ensure that my work aligns with
+                  team goals and expectations.
                 </p>
               </div>
             </div>
@@ -138,7 +139,7 @@ export default function About(props) {
                   I have a Bachelor’s degree in Digital Media & Design from the
                   University of Connecticut. During my time at UConn, I
                   developed a keen understanding of the aesthetic and functional
-                  demands of the digital marketplace, which translates
+                  standards of the tech industry, which translates
                   advantageously into my UI/UX designs.
                 </p>
                 <h2>Who is Tevin?</h2>
@@ -266,8 +267,8 @@ export default function About(props) {
                     I have a Bachelor’s degree in Digital Media & Design from
                     the University of Connecticut. During my time at UConn, I
                     developed a keen understanding of the aesthetic and
-                    functional demands of the digital marketplace, which
-                    translates advantageously into my UI/UX designs.
+                    functional standards of the tech industry, which translates
+                    advantageously into my UI/UX designs.
                   </p>
                   <h2>Who is Tevin?</h2>
                   <p>
@@ -340,11 +341,12 @@ export default function About(props) {
                   <p>
                     I am an active listener and a collaborative team player,
                     always striving to think both analytically and
-                    synergetically. I prioritize effective time management and
-                    organization, understanding that these habits are essential
-                    for maintaining clear, open communication with my colleagues
-                    and stakeholders. By staying punctual and accountable, I
-                    ensure that my work aligns with team goals and expectations.
+                    synergetically. I have a strong will and capcity to learn. I
+                    prioritize effective time management and organization,
+                    understanding that these habits are essential for
+                    maintaining clear, open communication with my colleagues and
+                    stakeholders. By staying punctual and accountable, I ensure
+                    that my work aligns with team goals and expectations.
                   </p>
                 </motion.div>
               </motion.div>
