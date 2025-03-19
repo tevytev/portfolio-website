@@ -138,7 +138,7 @@ export default function Portfolio(props) {
             projectImg={chatImg}
             projectNumber={"3"}
             description={
-              "FamilyFirst is a real-time, family-oriented chat app designed to help families stay connected and in tune with each other's well-being. Built with a React.js frontend and a Express.js backend, it features a family group chat called the \"Living Room,\" private one-on-one \"Rooms,\" and the ability to share emotional and activity statuses, fostering meaningful connections. With authentication and authorization capabilities, FamilyFirst ensures privacy and security for family members. Originally created for my own family, this app aims to make it easier for families to stay connected in today’s fast-paced world, offering both real-time communication and personal well-being updates."
+              "FamilyFirst is a real-time, family-oriented chat app designed to help families stay connected and in tune with each other's well-being. Built with a React.js frontend and a Express.js backend, it features a family group chat, private one-on-one chats, and the ability to share emotional and activity statuses, fostering meaningful connections. Originally created for my own family, this app aims to make it easier for families to stay linked in today’s fast-paced world."
             }
             technologies={[
               "HTML",
