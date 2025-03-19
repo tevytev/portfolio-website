@@ -134,11 +134,11 @@ export default function Portfolio(props) {
           ></ProjectCard>
           <ProjectCard
             id={"project3"}
-            projectName={"Real-time chat app (development)"}
+            projectName={"FamilyFirst: A Real-time Family Chat App"}
             projectImg={chatImg}
             projectNumber={"3"}
             description={
-              "This is a project I’m currently developing to help families stay connected in today’s fast-paced world. Like many, I often struggle to keep in touch with my family as much as I’d like. To solve this, I’m designing an app that will send daily or weekly reminders for family members—whether near or far—to check in with each other. The app will also include real-time updates, allowing users to share their emotional, activity, and goal statuses, helping everyone stay informed and engaged."
+              "FamilyFirst is a real-time, family-oriented chat app designed to help families stay connected and in tune with each other's well-being. Built with a React.js frontend and a Express.js backend, it features a family group chat called the \"Living Room,\" private one-on-one \"Rooms,\" and the ability to share emotional and activity statuses, fostering meaningful connections. With authentication and authorization capabilities, FamilyFirst ensures privacy and security for family members. Originally created for my own family, this app aims to make it easier for families to stay connected in today’s fast-paced world, offering both real-time communication and personal well-being updates."
             }
             technologies={[
               "HTML",
@@ -146,13 +146,15 @@ export default function Portfolio(props) {
               "JavaScript",
               "React.js",
               "Express.js",
-              "OAuth 2.0",
+              "JWT",
               "Socket.io",
               "MongoDB",
+              "Mongoose",
+              "axios",
               "Vite",
               "Figma",
-              "More to come",
             ]}
+            projectLink="https://real-time-chat-app-rwiy.onrender.com/register"
             info={projectThreeInfo}
             handleMoreInfoClick={handleMoreInfoClick}
             handleLessInfoClick={handleLessInfoClick}
