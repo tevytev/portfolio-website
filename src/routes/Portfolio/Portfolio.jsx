@@ -150,9 +150,10 @@ export default function Portfolio(props) {
               "Socket.io",
               "MongoDB",
               "Mongoose",
-              "axios",
+              "Axios",
               "Vite",
               "Figma",
+              "Cloudinary"
             ]}
             projectLink="https://real-time-chat-app-rwiy.onrender.com/register"
             info={projectThreeInfo}
